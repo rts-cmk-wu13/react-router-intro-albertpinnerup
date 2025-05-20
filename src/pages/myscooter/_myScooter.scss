@@ -1,0 +1,16 @@
+.myscooter {
+    background-color: #fff;
+    padding: 1rem;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #55418E;
+    }
+
+    main {
+        display: grid;
+        gap: .5rem;
+    }
+}

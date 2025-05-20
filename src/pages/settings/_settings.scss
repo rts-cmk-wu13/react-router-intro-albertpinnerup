@@ -1,0 +1,73 @@
+.settings {
+    background-color: #55418E;
+    padding: 1.5rem;
+    overflow: hidden;
+
+    #root {
+        position: relative;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    header {
+        .user {
+
+            .user__name {
+                color: #fff;
+            }
+
+            .user__welcome {
+                color: #fff;
+            }
+        }
+    }
+
+    main {
+
+        position: relative;
+
+        nav {
+            position: absolute;
+            margin-block-start: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-size: 1rem;
+
+            .active {
+                font-size: 18px;
+                font-weight: 800;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -1.5rem;
+                    height: 100%;
+                    width: 4px;
+                    background-color: #FFA500;
+                }
+            }
+        }
+
+        .bg__img {
+            width: 451.017px;
+            height: 602.503px;
+            transform: rotate(9deg);
+            flex-shrink: 0;
+            position: absolute;
+            top: 51px;
+            left: -138px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}

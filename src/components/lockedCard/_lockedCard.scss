@@ -1,0 +1,38 @@
+.locked__card {
+    background-color: #FFA500;
+    border-radius: 30px;
+    width: 100%;
+    padding: 1.375rem 1.625rem;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, 1fr);
+    max-height: 104px;
+
+    h1 {
+        font-size: 1.125rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    .lock__container {
+
+        border: solid 3px #E49401;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        grid-area: 1/2/-1/-1;
+
+        .lock {
+            width: 24px;
+            height: auto;
+            fill: #fff;
+        }
+    }
+
+}

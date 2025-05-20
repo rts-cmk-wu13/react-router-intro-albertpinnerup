@@ -1,0 +1,38 @@
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .stats__container {
+        border: solid #E6E5F2CF 1px;
+        border-radius: 25px;
+        padding: 20px 18px;
+        font-weight: 700;
+        width: 100%;
+        height: auto;
+        max-height: 127px;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        
+
+        h1 {
+            color: #55418E;
+            font-size: 0.875rem;
+        }
+
+        .logo {
+            color:#9897AD;
+            font-size: 1.5rem;
+            
+            svg {
+                stroke-width: 1.5;
+            }
+        }
+
+        p {
+            color: #FFA500;
+            font-size: 0.875rem;
+        }
+    }
+}
