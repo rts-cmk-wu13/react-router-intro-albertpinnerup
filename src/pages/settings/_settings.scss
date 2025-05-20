@@ -31,17 +31,22 @@
         position: relative;
 
         nav {
-            position: absolute;
+            position: relative;
             margin-block-start: 1rem;
             display: flex;
             flex-direction: column;
             gap: 30px;
             font-size: 1rem;
+            
+            a {
+                width: fit-content;
+            }
 
             .active {
                 font-size: 18px;
                 font-weight: 800;
                 position: relative;
+                z-index: 1;
 
                 &::before {
                     content: "";
@@ -51,6 +56,8 @@
                     height: 100%;
                     width: 4px;
                     background-color: #FFA500;
+                    z-index: -1;
+                    pointer-events: none;
                 }
             }
         }
@@ -63,6 +70,8 @@
             position: absolute;
             top: 51px;
             left: -138px;
+            z-index: -1;
+            pointer-events: none;
 
             img {
                 width: 100%;
